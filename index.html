@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Movie Hub</title>
+</head>
+
+<body>
+
+    <section class="main-section" id="main-section">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg ">
+                <div class="container-fluid">
+                    <a class="navbar-brand heading">Movie Hub</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                    <div class="collapse navbar-collapse" id="navbarText">
+                        <ul class="navbar-nav mx-auto">
+                            <li class="nav-item">
+                                <a class="nav-link links" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link links" href="#">Tv Show</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link links" href="#">Movie</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link links" href="#">Upcoming</a>
+                            </li>
+                        </ul>
+                        <div>
+                            <div class="search-bar">
+                                <i class="fa fa-search"></i>
+                                <input type="text" placeholder="Search Movie">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="main">
+                <div class="col-lg-6">
+                    <div class="title">
+                        <h1>Raya and the Last Dragon</h1>
+                    </div>
+                    <div class="tag-line">
+                        <h3>The world is broken, you can't trust anyone.</h3>
+                        <h5>5 March,2021</h5>
+                    </div>
+                    <div class="description">
+                        <p>Raya, a warrior, sets out to track down Sisu, a dragon, who transferred all her powers into a magical gem which is now scattered all over the kingdom of Kumandra, dividing its people..</p>
+                    </div>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+                        <h2>8.2 RATING</h2>
+                    </div>
+                    <div class="buttons">
+                        <button class="play"><i class="fa fa-play"></i>  PLAY</button>
+                        <button class="plus"><i class="fa fa-plus"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="movie-pictures">
+            <div class="images">
+                <img src="Images/Rava-image1.jpg" onclick="changeBackgroundImage(this)">
+            </div>
+            <div class="images active-image">
+                <img src="Images/Rava-image2.jpg" onclick="changeBackgroundImage(this)">
+            </div>
+            <div class="images">
+                <img src="Images/Rava-image3.jpg" onclick="changeBackgroundImage(this)">
+            </div>
+        </div>
+    </section>
+    <section class="seasons-section" id="seasons-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="title">
+                        <h1>Money Heist : Season 3</h1>
+                    </div>
+                    <div class="tag-line">
+                        <h3>To Love, You Need Courage..</h3>
+                        <h5>19 July,2019 </h5>
+                    </div>
+                    <div class="description">
+                    <p>When the national mint and a touring school group are held hostage by robbers, police believe that the thieves have no way out. Little do they know that the thieves have a bigger plan in store.</p>
+                    </div>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+                        <h2>8.0 RATING</h2>
+                    </div>
+                    <div class="buttons">
+                        <button class="play"><i class="fa fa-play"></i>  PLAY</button>
+                        <button class="plus"><i class="fa fa-plus"></i></button>
+                    </div>
+                </div>
+                <div class="col-lg-6 second-portion ">
+                    <div class="movie-pictures">
+                        <div class="images">
+                            <img src="Images/money-heist-image1.jpg" onclick="changeBackgroundImageSeason(this)">
+                        </div>
+                        <div class="images">
+                            <img src="Images/money-heist-image2.jpg" onclick="changeBackgroundImageSeason(this)">
+                        </div>
+                        <div class="images seasons-active-image">
+                            <img src="Images/money-heist-image3.jpg" onclick="changeBackgroundImageSeason(this)">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</section>
+
+<section class="tv-series-section" id="tv-series-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="title">
+                    <h1>Avengers the End Game</h1>
+                </div>
+                <div class="tag-line">
+                    <h3>“If we're going to win this fight, some of us might have to lose it.” ...</h3>
+                    <h5>26 April 2019</h5>
+                </div>
+                <div class="description">
+                    <p>After Thanos, an intergalactic warlord, disintegrates half of the universe, the Avengers must reunite and assemble again to reinvigorate their trounced allies and restore balance.</p>
+                </div>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+                    <h2>8.0 RATING</h2>
+                </div>
+                <div class="buttons">
+                    <button class="play"><i class="fa fa-play"></i>  PLAY</button>
+                    <button class="plus"><i class="fa fa-plus"></i></button>
+                </div>
+            </div>
+            <div class="col-lg-6 second-portion ">
+                <div class="movie-pictures" class="tv-series-active-image">
+                    <div class="images tv-series-active-image">
+                        <img src="Images/marvel-image1.jpg" onclick="changeBackgroundImageSeries(this)">
+                    </div>
+                    <div class="images">
+                        <img src="Images/marvel-image2.jpg" onclick="changeBackgroundImageSeries(this)">
+                    </div>
+                    <div class="images">
+                        <img src="Images/marvel-image3.jpg" onclick="changeBackgroundImageSeries(this)">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    <section class="category-buttons ">
+        <div class="buttons">
+            <button id="active-btn">All</button><button class="category-btn">Action</button><button class="category-btn">Comedy</button><button class="category-btn">Series</button><button class="category-btn">Adventure</button><button>Others</button>
+        </div>
+    </section>
+    <div class="category-header">
+        <h1 class="category-title">Most Popular(kannada)</h1>
+        <h1 class="view-all">View all <i class="fa-solid fa-circle-arrow-right"></i></h1>
+    </div>
+    <section class="cards-collection">
+        <div class="cards">
+            <div class="card">
+                <img src="Images/ulidavaru_kandanthe_ver12.jpg">
+                <div class="content">
+                    <h1>Ulidavaru Kandanthe</h1>
+                    <p>Revealing the truth of crime ....</p>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+                        <h2>8.0 RATING</h2>
+                    </div>
+                    <div class="buttons">
+                        <button class="play"><i class="fa fa-play"></i>  PLAY</button>
+                        <button class="plus"><i class="fa fa-plus"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="Images/kgf.jpg">
+                <div class="content">
+                    <h1>K.G.F: Chapter 1.</h1>
+                    <p>Rocky,seeks power and wealth in order to fulfil a promise to his dying mother...</p>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+                        <h2>8.0 RATING</h2>
+                    </div>
+                    <div class="buttons">
+                        <button class="play"><i class="fa fa-play"></i>  PLAY</button>
+                        <button class="plus"><i class="fa fa-plus"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="Images/Lucia.jpg">
+                <div class="content">
+                    <h1>Lucia</h1>
+                    <p>An usher of a cinema hall struggles to deal with severe insomnia....</p>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+                        <h2>8.0 RATING</h2>
+                    </div>
+                    <div class="buttons">
+                        <button class="play"><i class="fa fa-play"></i>  PLAY</button>
+                        <button class="plus"><i class="fa fa-plus"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="Images/rangitaranga.jpg">
+                <div class="content">
+                    <h1>RangiTaranga</h1>
+                    <p>Some unnatural occurrences reveal a mystery about Gautam's forgotten past....</p>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+                        <h2>8.0 RATING</h2>
+                    </div>
+                    <div class="buttons">
+                        <button class="play"><i class="fa fa-play"></i>  PLAY</button>
+                        <button class="plus"><i class="fa fa-plus"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="Images/ugramnhd.jpg">
+                <div class="content">
+                    <h1>Ugramm</h1>
+                    <p>When Agastya visits Mughor, he witnesses girls being raped in front of the villagers....</p>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+                        <h2>8.0 RATING</h2>
+                    </div>
+                    <div class="buttons">
+                        <button class="play"><i class="fa fa-play"></i>  PLAY</button>
+                        <button class="plus"><i class="fa fa-plus"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    <div class="category-header">
+        <h1 class="category-title">Most Popular(Hindi)</h1>
+        <h1 class="view-all">View all <i class="fa-solid fa-circle-arrow-right"></i></h1>
+    </div>
+    <section class="cards-collection">
+        <div class="cards">
+            <div class="card">
+                <img src="Images/3-idiots.jpg">
+                <div class="content">
+                    <h1>3 Idiots</h1>
+                    <p> In college, Farhan and Raju form a great bond with Rancho due to his refreshing outlook....</p>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+                        <h2>8.0 RATING</h2>
+                    </div>
+                    <div class="buttons">
+                        <button class="play"><i class="fa fa-play"></i>  PLAY</button>
+                        <button class="plus"><i class="fa fa-plus"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="Images/Rang De Basanti.jpg">
+                <div class="content">
+                    <h1>Rang De Basanti</h1>
+                    <p> The emotional and mental process turns them into rebels for a cause....</p>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+                        <h2>8.0 RATING</h2>
+                    </div>
+                    <div class="buttons">
+                        <button class="play"><i class="fa fa-play"></i>  PLAY</button>
+                        <button class="plus"><i class="fa fa-plus"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="Images/zindagi.jpg">
+                <div class="content">
+                    <h1>Zindagi Na Milegi Dobara</h1>
+                    <p>Friends Kabir, Imran and Arjun take a vacation in Spain ....</p>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+                        <h2>8.0 RATING</h2>
+                    </div>
+                    <div class="buttons">
+                        <button class="play"><i class="fa fa-play"></i>  PLAY</button>
+                        <button class="plus"><i class="fa fa-plus"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="Images/Barfi!_poster.jpg">
+                <div class="content">
+                    <h1>Barfi</h1>
+                    <p>Barfi forms a special bond with Jhilmil, a girl with autism ....</p>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+                        <h2>8.0 RATING</h2>
+                    </div>
+                    <div class="buttons">
+                        <button class="play"><i class="fa fa-play"></i>  PLAY</button>
+                        <button class="plus"><i class="fa fa-plus"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="Images/i hate.jpg">
+                <div class="content">
+                    <h1>I Hate Luv Storys</h1>
+                    <p>Though Jay hates everything about love,Simran is an extremely romantic woman ...</p>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+                        <h2>8.0 RATING</h2>
+                    </div>
+                    <div class="buttons">
+                        <button class="play"><i class="fa fa-play"></i>  PLAY</button>
+                        <button class="plus"><i class="fa fa-plus"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="category-header">
+        <h1 class="category-title">Most popular(English)</h1>
+        <h1 class="view-all">View all <i class="fa-solid fa-circle-arrow-right"></i></h1>
+    </div>
+    <section class="cards-collection">
+        <div class="cards">
+            <div class="card">
+                <img src="Images/titanic.jpg">
+                <div class="content">
+                    <h1>Titanic </h1>
+                    <p>Rose, who is being forced to marry a wealthy man, falls in love with Jack...</p>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+                        <h2>8.0 RATING</h2>
+                    </div>
+                    <div class="buttons">
+                        <button class="play"><i class="fa fa-play"></i>  PLAY</button>
+                        <button class="plus"><i class="fa fa-plus"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="Images/lion-king.jpg">
+                <div class="content">
+                    <h1>The Lion King</h1>
+                    <p>Simba, a young lion prince, flees his kingdom after the murder of his father ...</p>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+                        <h2>8.0 RATING</h2>
+                    </div>
+                    <div class="buttons">
+                        <button class="play"><i class="fa fa-play"></i>  PLAY</button>
+                        <button class="plus"><i class="fa fa-plus"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="Images/terminator.jpg">
+                <div class="content">
+                    <h1>Terminator 2</h1>
+                    <p>John,Sarah's 10-year-old son is attacked by T-1000,a new robot created by Skynet to destroy humanity ...</p>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+                        <h2>8.0 RATING</h2>
+                    </div>
+                    <div class="buttons">
+                        <button class="play"><i class="fa fa-play"></i>  PLAY</button>
+                        <button class="plus"><i class="fa fa-plus"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="Images/star wars.jpg">
+                <div class="content">
+                    <h1>Star wars</h1>
+                    <p>Star Wars is an American epic space opera media franchise created by George Lucas...</p>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+                        <h2>8.0 RATING</h2>
+                    </div>
+                    <div class="buttons">
+                        <button class="play"><i class="fa fa-play"></i>  PLAY</button>
+                        <button class="plus"><i class="fa fa-plus"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="Images/lord .jpg">
+                <div class="content">
+                    <h1>The Lord of the Rings</h1>
+                    <p>The Lord of the Rings is a trilogy of epic fantasy adventure films directed by Peter Jackson...</p>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+                        <h2>8.0 RATING</h2>
+                    </div>
+                    <div class="buttons">
+                        <button class="play"><i class="fa fa-play"></i>  PLAY</button>
+                        <button class="plus"><i class="fa fa-plus"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <h1 class="announcement">Popular web Series (Hindi)</h1>
+
+    <div class="category-header">
+        <h1 class="view-all"> </h1>
+        <h1 class="view-all">View all <i class="fa-solid fa-circle-arrow-right"></i></h1>
+    </div>
+    <section class="cards-collection">
+        <div class="cards">
+            <div class="card">
+                <img src="Images/familyman.jpg">
+                <div class="content">
+                    <h1>The Family Man</h1>
+                    <p>Srikant Tiwari is a middle-class man who also serves as a world-class spy...</p>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+                        <h2>8.0 RATING</h2>
+                    </div>
+                    <div class="buttons">
+                        <button class="play"><i class="fa fa-play"></i>  PLAY</button>
+                        <button class="plus"><i class="fa fa-plus"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="Images/panchayat.jpg">
+                <div class="content">
+                    <h1>Panchayat</h1>
+                    <p>An engineering graduate, Abhishek, is unable to find a job of his calibre ...</p>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+                        <h2>8.0 RATING</h2>
+                    </div>
+                    <div class="buttons">
+                        <button class="play"><i class="fa fa-play"></i>  PLAY</button>
+                        <button class="plus"><i class="fa fa-plus"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="Images/farzi.jpg">
+                <div class="content">
+                    <h1>Farzi</h1>
+                    <p>Sunny, a brilliant small-time artist,he creates the perfect fake currency note...</p>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+                        <h2>8.0 RATING</h2>
+                    </div>
+                    <div class="buttons">
+                        <button class="play"><i class="fa fa-play"></i>  PLAY</button>
+                        <button class="plus"><i class="fa fa-plus"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="Images/aspirants.jpg">
+                <div class="content">
+                    <h1>Aspirants</h1>
+                    <p>Three friends, Abhilash, Guri and SK, situated in Old Rajinder Nagar,upsc struggles...</p>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+                        <h2>8.0 RATING</h2>
+                    </div>
+                    <div class="buttons">
+                        <button class="play"><i class="fa fa-play"></i>  PLAY</button>
+                        <button class="plus"><i class="fa fa-plus"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="Images/immature.jpg">
+                <div class="content">
+                    <h1>ImMATURE</h1>
+                    <p>Following the lives of three teenage boys, Dhruv, Chacha and Chutney...</p>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+                        <h2>8.0 RATING</h2>
+                    </div>
+                    <div class="buttons">
+                        <button class="play"><i class="fa fa-play"></i>  PLAY</button>
+                        <button class="plus"><i class="fa fa-plus"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="footer">
+        <div class="category-header">
+            <h1 class="view-all">Movie Hub</h1>
+            <h1 class="view-all">Follow us on <i class="fa-brands fa-facebook-f"></i> <i class="fa-brands fa-instagram"></i> <i class="fa-brands fa-threads"></i> <i class="fa-brands fa-twitter"></i> <i class="fa-brands fa-youtube"></i></h1>
+        </div>
+        <hr>
+        <div class="footer-cards">
+            <div class="footer-card">
+                <h1>Movies</h1>
+                <h2>Action</h2>
+                <h2>Comedy</h2>
+                <h2>Horror</h2>
+                <h2>Animation</h2>
+                <h2>Fantasy</h2>
+            </div>
+            <div class="footer-card">
+                <h1>Series</h1>
+                <h2>Reality Shows</h2>
+                <h2>Classic Shows</h2>
+                <h2>Valentine Shows</h2>
+                <h2>Comedy</h2>
+                <h2>Fantasy</h2>
+            </div>
+            <div class="footer-card">
+                <h1>Support</h1>
+                <h2>General Info</h2>
+                <h2>Privacy Policy</h2>
+                <h2>Terms of service</h2>
+                <h2>Help Center</h2>
+            </div>
+            <div class="footer-card">
+                <h1>Support</h1>
+                <h2>support@movieshub.com</h2>
+                <h2>Tel: 01987427****</h2>
+
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+    <!---------------------------------------------------------------------------------------------------------------------------->
+    <script src="app.js">
+    </script>
+    <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous" script>
+    </script>
+</body>
+
+</html>
